@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历</title>
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #wrapper{
+            width: 996px;
+            margin: 0 auto;
+        }
+        .top-wrap{
+            width: 996px;
+            background-color: #2d3e50;
+            margin: 0 auto;
+        }
+        .top-wrapmain{
+            height: 158px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left{
+            margin-left: 58px;
+        }
+        .right{
+            margin-right: 105px;
+        }
+        .info-wraper{
+            margin-top: 38px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .info-wraper, .left-tx{
+            width: 282px;
+            height: 49px;
+            line-height: 49px;
+            text-align: center;
+            border: 1px solid transparent;
+            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
+                        linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
+            background-size: 51% 100%;
+            background-repeat: no-repeat;
+        }
+        .info-wraper .right-tx{
+            margin-left: 282px;
+            margin-top: -51px;
+            width: 441px;
+            height: 49px;
+            border: 1px solid transparent;
+            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
+                        linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
+            background-repeat: no-repeat;
+            background-size: 51% 100%;
+        }
+        .base-info{
+            width: 727px;
+        }
+        .base-info li{
+            color: black;
+        }
+        .base-info .r li{
+            float: left;
+            margin-right: 150px;
+        }
+        .base-info .l li{
+            float: left;
+            margin-right: 150px;
+        }
+        .item-experience{
+            margin-top: 130px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .img{
+            float: right;
+            margin-right: 64px;
+            margin-top: -50px;
+        }
+        .experience{
+            color: black;
+            letter-spacing: 5px;
+            line-height: 50px;
+        }
+        .item-experience .left-tx{
+            width: 282px;
+            height: 49px;
+            text-align: center;
+            border: 1px solid transparent;
+            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
+            linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
+            background-size: 51% 100%;
+            background-repeat: no-repeat;
+        }
+        .item-experience .right-tx{
+            margin-left: 282px;
+            margin-top: -51px;
+            width: 441px;
+            height: 49px;
+            border: 1px solid transparent;
+            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
+            linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
+            background-repeat: no-repeat;
+            background-size: 51% 100%;
+        }
+        .art-wrapper{
+            margin-top: 40px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .art-wrapper .left-tx{
+            width: 282px;
+            height: 49px;
+            text-align: center;
+            border: 1px solid transparent;
+            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
+            linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
+            background-size: 51% 100%;
+            background-repeat: no-repeat;
+        }
+        .art-wrapper .right-tx{
+            margin-left: 250px;
+            margin-top: -51px;
+            width: 741px;
+            height: 49px;
+            border: 1px solid transparent;
+            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
+            linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
+            background-repeat: no-repeat;
+            background-size: 51% 100%;
+        }
+        .art{
+            color: black;
+            letter-spacing: 5px;
+            line-height: 50px;
+        }
+        .art li::before{
+            content: '';
+        }
+        .evaluate-wrapper{
+            margin-top: 40px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .evaluate-wrapper .left-tx{
+            width: 282px;
+            height: 49px;
+            text-align: center;
+            border: 1px solid transparent;
+            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
+            linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
+            background-size: 51% 100%;
+            background-repeat: no-repeat;
+        }
+        .evaluate-wrapper .right-tx{
+            margin-left: 250px;
+            margin-top: -51px;
+            width: 741px;
+            height: 49px;
+            border: 1px solid transparent;
+            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
+            linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
+            background-repeat: no-repeat;
+            background-size: 51% 100%;
+        }
+        .evaluate{
+            color: black;
+            letter-spacing: 5px;
+            line-height: 50px;
+        }
+        .bottom{
+            margin-top: 40px;
+            width: 996px;
+            height: 29px;
+            background-color:#2d3e50;
+        }
+    </style>
+</head>
+<body>
+<!--容器-->
+    <div id="wrapper">
+<!--顶部-->
+        <div class="top-wrap">
+<!--            版心-->
+            <div class="top-wrapmain">
+                <!--            左侧-->
+                <div class="left">
+                    <div>
+                        <h1>个人简历</h1>
+                        <h3>求职意向：web前端开发</h3>
+                    </div>
+                </div>
+                <!--            右侧-->
+                <div class="right">
+                    <div>
+                        <p>
+                            <sapn class="iconfont">&#xe787;</sapn>
+                            18379255592
+                        </p>
+                        <p>
+                            <span class="iconfont">&#xe66f;</span>
+                            1764460248@qq.com
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+<!--        基本资料-->
+        <div class="info-wraper">
+<!--            左边梯形-->
+            <div class="left-tx">
+                基本资料
+            </div>
+<!--            右边梯形-->
+            <div class="right-tx">
+            </div>
+<!--            基本信息-->
+            <div class="base-info">
+                <ul class="r">
+                    <li>姓名：</li>
+                    <li>出生年月：</li>
+                    <li>性别：</li>
+                </ul>
+                <ul class="l">
+                    <li>籍贯：</li>
+                    <li>学历：</li>
+                </ul>
+            </div>
+        </div>
+<!--       寸照-->
+        <div class="img">
+            <img style="width: 166px" src="./image/1.jpg" alt="">
+        </div>
+<!--        项目经历-->
+        <div class="item-experience">
+            <!--            左边梯形-->
+            <div class="left-tx">
+                项目经历
+            </div>
+            <!--            右边梯形-->
+            <div class="right-tx">
+            </div>
+            <!--            项目经历-->
+            <div class="experience">
+                <h2>项目一：</h2>
+                <h3>项目名称：公司官网前端开发</h3>
+                <span style="font-weight: bold">项目描述:</span><p>是一个信息发布平台，用户可以发布自己公司的业务。有等保测评，渗透测试，风险管理等多个模块，用户可以进入想要咨询的模块中，查看该模块公司的具体业务和信息，用户可以在个人中心查看已咨询项目</p>
+                <span style="font-weight: bold">技术要点:</span><p>1、使用vue2，VueRouter,elementUI,axios技术栈
+                2、按照ui设计图修改elementUI自带样式，主要使用flex布局</p>
+                <h2>项目二：</h2>
+                <h3>项目名称：尚品汇</h3>
+                <span style="font-weight: bold">项目描述</span><p>尚品汇是一款基于京东模式的购物平台，以顾客模式为主，基于此模式提供商品购买，手机充值等业务功能</p>
+                <span style="font-weight: bold">技术要点</span><p>1、主要使用了vue框架，使用vue-cli脚手架搭建项目框架
+                2、封装组件，减少代码冗余
+                3、登录页面采用vee-validate表单结合正则表达式实现登录账号验证</p>
+            </div>
+        </div>
+<!--        开发技能-->
+        <div class="art-wrapper">
+            <!--            左边梯形-->
+            <div class="left-tx">
+                开发技能
+            </div>
+            <!--            右边梯形-->
+            <div class="right-tx">
+            </div>
+            <!--            开发技能-->
+            <div class="art">
+                <ul>
+                    <li>熟悉HTML、CSS、JavaScript，了解ES6语法，了解H5、CSS3新属性</li>
+                    <li>熟悉Vue、VueRouter、@Vue/cli、ElementUIAxios等相关技术</li>
+                    <li>熟悉组件间的通信和数据管理，熟练使用Vuex</li>
+                </ul>
+            </div>
+        </div>
+<!--        自我评价-->
+        <div class="evaluate-wrapper">
+            <!--            左边梯形-->
+            <div class="left-tx">
+                自我评价
+            </div>
+            <!--            右边梯形-->
+            <div class="right-tx">
+            </div>
+            <!--            自我评价-->
+            <div class="evaluate">
+                <ul>
+                    <li>1.本人思想端正，积极向上，对新鲜事物接受能力强，注重长期稳定的发展机会</li>
+                    <li>2.对工作充满热情，热爱技术，经常阅读技术文章、博客</li>
+                    <li>3.有较强的自学能力和团队合作交流能力</li>
+                </ul>
+            </div>
+        </div>
+<!--        底部框-->
+        <div class="bottom">
+        </div>
+    </div>
+</body>
+</html>
